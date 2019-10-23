@@ -2,6 +2,9 @@
 .logo > img{
     width: 100px;
 }
+.headeer-wraper{
+    padding: 30px 0;
+}
 .nav-li{
     margin-right: 15px;
     font-size: 24px;
@@ -26,6 +29,18 @@
 .social-li:last-child::after{
     display: none;
 }
+.burger-icon{
+    color: #363E97;
+    font-size: 30px;
+    margin-left: 30px;
+    display: none;
+    border: 2px solid #3D58A6;
+    padding: 10px;
+}
+.right-block{
+    display: flex;
+}
+/* end header */
 
 /* base classes */
 .d-flex{
@@ -38,11 +53,26 @@
     width: 100%;
     margin: 0 auto;
 }
-.container img{
-    width: 100%;
+.div-p{
+    bottom: 30px;
+    left: 30px;
+    font-size: 30px;
+    color: white;
+    line-height: 39px;
 }
 .img-block{
     width: 100%;
+}
+.p-absolute{
+    position: absolute;
+}
+.p-relative{
+    position: relative;
+}
+.white-logo{
+    width: 100px;
+    bottom: 30px;
+    right: 30px;
 }
 
 /* grey-bg section */
@@ -96,4 +126,88 @@ iframe{
 }
 .article-wraper img{
     display: block;
+}
+.article-wraper{
+    margin-top: 30px;
+}
+.article-wraper:nth-child(1),
+.article-wraper:nth-child(2),
+.article-wraper:nth-child(3),
+.article-wraper:nth-child(4),
+
+/* media */
+@media (max-width: 1170px){
+    .container{
+        padding: 0 15px;
+    }
+}
+@media (max-width: 1135px){
+    .img-wraper{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 1024px){
+    .navigation{
+        display: none;
+    }
+    .burger-icon{
+        display: block;
+    }
+    .article-wraper:last-child{
+        display: none;
+    }
+    .video-wraper{
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .video-div{
+        margin-top: 30px
+    }
+    .article-wraper{
+        width: 32%;
+    }
+    .article-wraper > img{
+        width: 100%;
+    }
+    .article-wraper:nth-child(4){
+        margin-top: 30px;
+    }
+}
+@media (max-width: 480px){
+    .social-li:not(.active){
+        display: none;
+    }
+    .article-wraper{
+        width: 100%;
+    }
+    .article-wraper:nth-child(3){
+        margin-top: 30px;
+    }
+}
+@media (max-width: 950px){
+    .div-p{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .white-logo{
+        width: 70px;
+    }
+}
+@media (max-width:480px){
+    .article-wraper{
+        width: 48%;
+    }
+    .article-wraper > img{
+        width: 100%;
+    }
+    .article-wraper:nth-child(3){
+        margin-top: 30px;
+    }
+}
+@media (max-width: 420px){
+    .div-p{
+        font-size: 12px;
+        line-height: 20px;
+    }
 }
